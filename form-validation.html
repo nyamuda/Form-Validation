@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form-validation.css">
+	<link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+	<header class="info">Daily Tasks Manager</header>
+	<main>
+		<p class="info">Please sign in or sign up to create your  daily to-do tasks</p>
+		<div class="btns">
+			<button id="sign-in-btn1">Sign in</button><button id="sign-up-btn1">Sign Up</button>
+		</div>
+		<div class="password-errors">
+			<p>*Your password must contain a least one symbolic character, uppercase letter, lowercase letter, numeric value and must be more than 8 characters long</p>
+		</div>
+		<div class="form-in">
+			<form>
+				<p class="cancel">&#xd7;</p>
+				<p id="error-in-message">*Sorry, the username or password is incorrect</p>
+				<input id="input-in" type="text" placeholder="enter your username">
+				<input id="password-in" type="text" placeholder=" eneter password">
+				<button id="sign-in-form" type="submit">Sign in</button>
+			</form>
+		</div>
+		<div class="form-up">
+			<form>
+				<p id="up-cancel" class="cancel">&#xd7;</p>
+				<p id="user-taken">*Sorry, the username has already been taken</p>
+				<div class="sign-up-name">
+					<input id="input-up" type="text" placeholder="enter your username" required>
+					<p class="error-up1">*</p>
+				</div>
+				<div class="sign-up-password">
+					<input id="password-up" type="text" placeholder=" enter password" required>
+					<p class="error-up2">*</p>
+				</div>
+				<button id="sign-up-form" type="submit">Sign Up</button>
+			</form>
+
+		</div>
+	</main>
+	<script type="text/javascript" src="form-validation.js"></script>
+</body>
+
+</html>
